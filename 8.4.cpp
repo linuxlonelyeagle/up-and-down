@@ -15,6 +15,15 @@ f(vector<string> &strs,string argv)
     }
     return 0;
 }
+void 
+print(vector<string> &strs)
+{
+    ofstream print("out.txt");
+    for(auto str:strs)
+    {
+        print<<str<<endl;
+    }
+}
 
 int
 main(int argc,char *argv[])
